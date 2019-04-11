@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Player Counter</string>
+    <string name="introMsg">Intropack</string>
+    <string name="aboutUsMsg">AboutUs</string>
+    <string name="aboutUs">Sobre</string>
+    <string name="repositorio">Repositório</string>
+</resources>
