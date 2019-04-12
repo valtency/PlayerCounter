@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,11 +74,13 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Opcao opcaoEscolhida = opcoes.get(position);
+                String nome = opcaoEscolhida.getNomePartida();
+                Toast.makeText(getApplicationContext(), "posicao "+nome, Toast.LENGTH_SHORT).show();
 
-                //Intent intencao = new Intent(MainActivity.this, Opcoes.class);
+                Intent intent = new Intent(MainActivity.this, PlayerCounterActivity.class);
 
-                //intencao.putExtra("opcao", opcaoEscolhida);
-                //startActivity(intencao);
+                //intent.putExtra("opcao", opcaoEscolhida);
+                startActivity(intent);
 
 
             }
