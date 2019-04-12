@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.menu_repositorio:
-                String url = "https://github.com/icarosolon?tab=repositories";
+                String url = "https://github.com/valtency/PlayerCounter";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 
                 if (intent.resolveActivity(getPackageManager()) != null) {
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Opcao opcaoEscolhida = opcoes.get(position);
                 String nome = opcaoEscolhida.getNomePartida();
-                Toast.makeText(getApplicationContext(), "posicao "+nome, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Modo "+nome, Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(MainActivity.this, PlayerCounterActivity.class);
 

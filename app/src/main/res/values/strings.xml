@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Player Counter</string>
-    <string name="introMsg">Intropack</string>
+    <string name="powered">Powered by:</string>
     <string name="aboutUsMsg">AboutUs</string>
     <string name="aboutUs">Sobre</string>
     <string name="repositorio">Repositório</string>
+    <string name="dev1">Valtency Remígio</string>
+    <string name="dev2">Anderson Igor</string>
 </resources>

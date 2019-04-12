@@ -7,10 +7,24 @@
     tools:context=".IntroActivity"
     android:orientation="vertical">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/introMsg"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/solar_system" />
+
+    <TextView
+        style="@style/powered"
+        android:text="@string/powered"
+        />
+    <TextView
+        style="@style/dev"
+        android:text="@string/dev1"
+        />
+    <TextView
+        style="@style/dev"
+        android:text="@string/dev2"
         />
 
 </LinearLayout>

@@ -8,6 +8,7 @@ public class Opcao implements Serializable {
     private String modalidadePartida;
     private int qtdJogadores;
 
+
     public Opcao(){}
 
     public Opcao(String nomePartida, String descricaoPartida, String modalidadePartida, int qtdJogadores) {

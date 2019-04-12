@@ -5,31 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PlayerCounterActivity"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:baselineAligned="false">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
         android:layout_weight="0.5">
 
+
+
         <TextView
-            android:id="@+id/nomePlayer1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="20"
-            android:textSize="30sp"/>
+            android:id="@+id/tvPtVidaPlayer1"
+            style="@style/vida" />
 
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
+        <SeekBar
+            android:id="@+id/sbCtVenenoPlayer1"
+            style="@style/veneno"
+            android:layout_below="@id/tvPtVidaPlayer1"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:background="@color/colorPrimary"
         android:layout_weight="0.5">
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 
