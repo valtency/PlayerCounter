@@ -4,6 +4,10 @@
     <string name="aboutUsMsg">AboutUs</string>
     <string name="aboutUs">Sobre</string>
     <string name="repositorio">Repositório</string>
-    <string name="dev1">Valtency Remígio</string>
-    <string name="dev2">Anderson Igor</string>
+    <string name="dev1">Anderson Igor</string>
+    <string name="dev2">Valtency Remígio</string>
+    <string name="pontos1">+1</string>
+    <string name="pontos_1">-1</string>
+    <string name="pontos5">5</string>
+    <string name="pontos_5">-5</string>
 </resources>

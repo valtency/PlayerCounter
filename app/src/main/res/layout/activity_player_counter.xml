@@ -9,6 +9,7 @@
     android:weightSum="1"
     android:baselineAligned="false">
 
+
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -16,23 +17,128 @@
         android:layout_weight="0.5">
 
 
+        <TextView
+            android:id="@+id/tvNomePlayer1"
+            style="@style/player"
+            android:text="Player 1"
+            />
 
         <TextView
             android:id="@+id/tvPtVidaPlayer1"
-            style="@style/vida" />
+            style="@style/vida"
+            android:layout_below="@id/tvNomePlayer1"
+            />
+
+        <Button
+            style="@style/btnPositivo"
+            android:id="@+id/btnPontos1player1"
+            android:layout_below="@id/tvPtVidaPlayer1"
+            android:text="@string/pontos1" />
+
+        <Button
+            style="@style/btnPositivo"
+
+            android:id="@+id/btnPontos5player1"
+
+            android:layout_below="@id/tvPtVidaPlayer1"
+            android:layout_toEndOf="@id/btnPontos1player1"
+            android:text="@string/pontos5" />
+
+        <Button
+            style="@style/btnNegativo"
+
+            android:id="@+id/btnPontos_5player1"
+
+            android:layout_below="@id/tvPtVidaPlayer1"
+            android:layout_toEndOf="@id/btnPontos5player1"
+            android:text="@string/pontos_5" />
+
+        <Button
+            style="@style/btnNegativo"
+
+            android:id="@+id/btnPontos_1player1"
+
+            android:layout_below="@id/tvPtVidaPlayer1"
+            android:layout_toEndOf="@id/btnPontos_5player1"
+            android:text="@string/pontos_1" />
+
+
 
 
         <SeekBar
             android:id="@+id/sbCtVenenoPlayer1"
-            style="@style/veneno"
-            android:layout_below="@id/tvPtVidaPlayer1"/>
+            style="@style/sbVeneno"
+            android:layout_below="@id/btnPontos1player1"/>
+        <TextView
+            android:id="@+id/tvCtVeneno1"
+            style="@style/tvVeneno"
+            android:layout_below="@id/sbCtVenenoPlayer1"/>
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:background="@color/colorPrimary"
         android:layout_weight="0.5">
+
+
+        <TextView
+            android:id="@+id/tvNomePlayer2"
+            style="@style/player"
+            android:text="Player 2"
+            />
+
+        <TextView
+            android:id="@+id/tvPtVidaPlayer2"
+            style="@style/vida"
+            android:layout_below="@id/tvNomePlayer2"
+            />
+
+        <Button
+            style="@style/btnPositivo"
+            android:id="@+id/btnPontos1player2"
+            android:layout_below="@id/tvPtVidaPlayer2"
+            android:text="@string/pontos1" />
+
+        <Button
+            style="@style/btnPositivo"
+
+            android:id="@+id/btnPontos5player2"
+
+            android:layout_below="@id/tvPtVidaPlayer2"
+            android:layout_toEndOf="@id/btnPontos1player2"
+            android:text="@string/pontos5" />
+
+        <Button
+            style="@style/btnNegativo"
+
+            android:id="@+id/btnPontos_5player2"
+
+            android:layout_below="@id/tvPtVidaPlayer2"
+            android:layout_toEndOf="@id/btnPontos5player2"
+            android:text="@string/pontos_5" />
+
+        <Button
+            style="@style/btnNegativo"
+
+            android:id="@+id/btnPontos_1player2"
+
+            android:layout_below="@id/tvPtVidaPlayer2"
+            android:layout_toEndOf="@id/btnPontos_5player2"
+            android:text="@string/pontos_1" />
+
+
+
+
+        <SeekBar
+            android:id="@+id/sbCtVenenoPlayer2"
+            style="@style/sbVeneno"
+            android:layout_below="@id/btnPontos1player2"/>
+        <TextView
+            android:id="@+id/tvCtVeneno2"
+            style="@style/tvVeneno"
+            android:layout_below="@id/sbCtVenenoPlayer2"/>
 
     </RelativeLayout>
 

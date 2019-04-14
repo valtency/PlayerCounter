@@ -11,21 +11,33 @@
     <style name="player">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textAlignment">center</item>
 
     </style>
     <style name="vida">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">20</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">30dp</item>
 
     </style>
-    <style name="veneno">
+    <style name="sbVeneno">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
 
     </style>
+    <style name="tvVeneno">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">10</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
 
+    </style>
     <style name="dev">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -43,6 +55,19 @@
         <item name="android:layout_marginBottom">20dp</item>
 
     </style>
+    <style name="btnPositivo" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:background">@drawable/btn_redondo_gold</item>
+    </style>
+    <style name="btnNegativo" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:background">@drawable/btn_redondo_red</item>
+    </style>
+
 
 
 </resources>
