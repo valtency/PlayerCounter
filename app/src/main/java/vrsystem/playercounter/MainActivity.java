@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         opcoes = new ArrayList<>();
-        opcoes.add(new Opcao("Duel", "Partida para dois jogadores", "Standard", 2));
-        opcoes.add(new Opcao("Battle Royale", "Partida para quatro jogadores", "Standard", 4));
-        opcoes.add(new Opcao("Commander", "Partida para dois jogadores, modo Commander", "Commander", 2));
-        opcoes.add(new Opcao("Commander Royale", "Partida para quatro jogadores, modo Commander", "Commander", 4));
+        opcoes.add(new Opcao("Duel", "Partida para dois jogadores", "standard", 2));
+        opcoes.add(new Opcao("Battle Royale", "Partida para quatro jogadores", "standard", 4));
+        opcoes.add(new Opcao("Commander", "Partida para dois jogadores, modo Commander", "commander", 2));
+        opcoes.add(new Opcao("Commander Royale", "Partida para quatro jogadores, modo Commander", "commander", 4));
         opcoes.add(new Opcao("Sobre", "Dados sobre o aplicativo", "sobre", 0));
         opcoes.add(new Opcao("Repositório", "Visite nosso repositório", "repositorio", 0));
 
@@ -80,15 +80,16 @@ public class MainActivity extends AppCompatActivity {
                 int qtdJogadores = opcaoEscolhida.getQtdJogadores();
                 String modalidade = opcaoEscolhida.getModalidadePartida();
                 if(qtdJogadores == 0){
-                    if(modalidade == "sobre") {
+                    if(modalidade.equals("sobre")) {
                         intent = new Intent(MainActivity.this, AboutUsActivity.class);
-                    }
-                    if(modalidade == "repositorio") {
-                        String url = "https://github.com/valtency/PlayerCounter";
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     }else{
-                        //caso nenhuma opcao seja valida, inicializa a activity sobre
-                        intent = new Intent(MainActivity.this, AboutUsActivity.class);
+                        if(modalidade.equals("repositorio")) {
+                            String url = "https://github.com/valtency/PlayerCounter";
+                            intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                        }else{
+                            //caso nenhuma opcao seja valida, inicializa a activity sobre
+                            intent = new Intent(MainActivity.this, AboutUsActivity.class);
+                        }
                     }
                 }else{
                     Toast.makeText(getApplicationContext(), "Modo "+nome, Toast.LENGTH_SHORT).show();
@@ -96,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                //intent.putExtra("opcao", opcaoEscolhida);
+                intent.putExtra("modalidade", modalidade);
+                
                 startActivity(intent);
 
 

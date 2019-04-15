@@ -1,5 +1,6 @@
 package vrsystem.playercounter;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,10 @@ public class PlayerCounterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_counter);
 
+        String modalidade = getIntent().getStringExtra("modalidade");
+
+
+
         tvPtVida1 = findViewById(R.id.tvPtVidaPlayer1);
         tvCtVeneno1 = findViewById(R.id.tvCtVeneno1);
         sbCtVeneno1 = findViewById(R.id.sbCtVenenoPlayer1);
@@ -30,8 +35,7 @@ public class PlayerCounterActivity extends AppCompatActivity {
         btnPontos5player1 = findViewById(R.id.btnPontos5player1);
         btnPontos_1player1 = findViewById(R.id.btnPontos_1player1);
         btnPontos_5player1 = findViewById(R.id.btnPontos_5player1);
-        sbCtVeneno1.setMax(10);
-        controlaBarra(tvCtVeneno1, sbCtVeneno1);
+
 
         tvPtVida2 = findViewById(R.id.tvPtVidaPlayer2);
         tvCtVeneno2 = findViewById(R.id.tvCtVeneno2);
@@ -41,10 +45,21 @@ public class PlayerCounterActivity extends AppCompatActivity {
         btnPontos5player2 = findViewById(R.id.btnPontos5player2);
         btnPontos_1player2 = findViewById(R.id.btnPontos_1player2);
         btnPontos_5player2 = findViewById(R.id.btnPontos_5player2);
+
+
+        sbCtVeneno1.setMax(10);
         sbCtVeneno2.setMax(10);
+
+        if(modalidade.equals("commander")){
+            sbCtVeneno1.setMax(20);
+            sbCtVeneno2.setMax(20);
+            tvPtVida1.setText("40");
+            tvPtVida2.setText("40");
+        }
+
+
+        controlaBarra(tvCtVeneno1, sbCtVeneno1);
         controlaBarra(tvCtVeneno2, sbCtVeneno2);
-
-
         controlaBotao(tvPtVida1, btnPontos1player1);
         controlaBotao(tvPtVida1, btnPontos5player1);
         controlaBotao(tvPtVida1, btnPontos_1player1);
