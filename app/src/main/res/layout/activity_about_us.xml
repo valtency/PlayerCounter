@@ -21,7 +21,7 @@
 
             <TextView
                 style="@style/aboutUsTitle"
-                android:text="@string/version"
+                android:text="@string/versao"
                 />
             <TextView
                 style="@style/aboutUsTitle"
