@@ -10,4 +10,19 @@
     <string name="pontos_1">-1</string>
     <string name="pontos5">+5</string>
     <string name="pontos_5">-5</string>
+    <string name="version">Versão: 1.00.05.0780</string>
+
+    <string name="desenv">Desenvolvedores</string>
+
+    <string name="visaoGeral">Visão Geral</string>
+
+    <string name="visaoGeralDesc1">O aplicativo auxilia na marcação de dados de jogos de tabuleiro, dispensando o uso de fichas de papel.</string>
+
+    <string name="visaoGeralDesc2">Nesse sentido, tem como objetivo marcar pontos de vida e marcadores de veneno de cada jogador individualmente. Além de fornecer praticidade e agilidade ao se jogar jogos de tabuleiro.</string>
+
+    <string name="padroesMarcadores">Padrões de marcadores</string>
+
+    <string name="padroesMarcadores1">Nas modalidades standard, o aplicativo inicializa, para cada jogador, a tela de marcadores com 20 pontos de vida e zero na barra de marcação de veneno. Nesta modalidade, a barra de veneno pode variar de 0 à 10.</string>
+
+    <string name="padroesMarcadores2">Nas modalidades commander, o aplicativo inicializara tela de marcadores com 40 pontos de vida e zero na barra de marcação de veneno para cada jogador. Nesta modalidade, a barra de veneno pode variar de 0 à 20.</string>
 </resources>

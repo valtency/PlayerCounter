@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -70,6 +71,15 @@ public class PlayerCounterActivity extends AppCompatActivity {
         controlaBotao(tvPtVida2, btnPontos_1player2);
         controlaBotao(tvPtVida2, btnPontos_5player2);
 
+//
+//        tvNomePlayer1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                edt1.setText();
+//                tvNomePlayer1.setText("novo");
+//            }
+//        });
+
 
 
     }//onCreate
@@ -101,7 +111,6 @@ public class PlayerCounterActivity extends AppCompatActivity {
                             progress_value = progress;
                             tvVeneno.setText("" + progress );
 //                            Toast.makeText(PlayerCounterActivity.this,"Marcador de Veneno",Toast.LENGTH_LONG).show();
-                            Toast.makeText(PlayerCounterActivity.this,"Marcador de Veneno",Toast.LENGTH_LONG).show();
                         }
 
                         @Override
